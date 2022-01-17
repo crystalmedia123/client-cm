@@ -1,0 +1,338 @@
+/* __________CUSTOM STYLE SECTION custom.css__________ */
+
+/* body */
+* {
+  text-transform: none !important;
+}
+
+/* admin button */
+.admin-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 15em;
+  height: 50px;
+  margin: 1em auto 3em auto;
+  background-color: #f4a632;
+  color: red;
+  border: 1px solid red;
+  font-weight: bold;
+}
+
+/* Page load styling */
+.bg-body {
+  background: #151001;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  align-items: center;
+  justify-content: space-evenly;
+  align-content: center;
+  margin: auto;
+}
+
+.bg-body img {
+  /* width: calc(100vw / 0.5); */
+  width: 35em;
+  height: 60%;
+  margin: -1em 0 0 0;
+}
+
+.bg-body button {
+  width: 15em;
+  height: 7%;
+  border-radius: 20px;
+  margin: -17em 0 0 0;
+}
+
+.bg-body .pageload-btn {
+  background: #f4a632;
+  color: #fff;
+  font-weight: bold;
+  width: 15em;
+  height: 3em;
+  border-radius: 20px;
+  margin: -17em 0 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* trans admin table */
+.scrollit {
+  /* display: none; */
+  /* overflow-x: auto; */
+  margin: auto auto;
+  overflow-x: scroll;
+  height: 80vh;
+  width: 73vw;
+}
+/* credentials text */
+.dangerr {
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 10px;
+  margin: 1em 4em 2em 4em;
+  color: red;
+}
+
+.img-upload input {
+  display: inline-block;
+  padding: 1em;
+}
+
+/* paginate */
+.page-page {
+  display: flex;
+  align-items: flex-start;
+  width: 600px;
+}
+
+.page-hide {
+  display: none;
+}
+
+.page-show {
+  display: inline;
+}
+
+/* Loader */
+.loader {
+  margin: auto auto;
+}
+/* crypto widget */
+.crypto {
+  margin-top: 1em;
+  margin-right: 1em;
+}
+
+/* .main-form {
+  margin-left: 2rem !important;
+} */
+
+/* __________general Input__________ */
+
+/* .field input[id='email']:hover {
+  background: #291f12 !important;
+} */
+
+/* __________wallet__________ */
+
+.wallet-img-box {
+  background: #19160f !important;
+  width: 27em;
+  height: 19em;
+}
+
+.wallet-img {
+  /* width: 27em;
+  height: 19em; */
+
+  width: 17vw;
+  height: 30vh;
+  margin: 0 0 0 0;
+}
+
+.card h3 {
+  margin-top: 10px !important;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 1200px) {
+  .wallet-img {
+    margin: 2em 1em 0 0;
+    width: 20vw;
+    height: 22vh;
+  }
+}
+@media screen and (max-width: 900px) {
+  .wallet-img {
+    margin: 5em 1em 0 0;
+    width: 21vw;
+    height: 15vh;
+  }
+}
+@media screen and (max-width: 700px) {
+  .wallet-img-box {
+    background: none;
+  }
+  .wallet-img {
+    margin: 2em 1em 0 3.5em;
+    width: 60vw;
+    height: 25vh;
+  }
+}
+
+/* __________Dashboard__________ */
+.wallet {
+  background-image: url('../../static/images/Wallet.svg');
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  /* width: 100%; */
+}
+
+.boards p {
+  color: rgb(29, 177, 29);
+  margin-right: 10px;
+}
+
+/* __________siedbar__________ */
+.active {
+  background-color: var(--btn-color);
+  border-radius: 0 40px 40px 0;
+}
+
+aside nav a:hover {
+  background-color: var(--btn-color);
+  border-radius: 0 40px 40px 0;
+}
+
+/* deposit */
+.address input[id='address'] {
+  background: #291f12;
+  border: none;
+  border-radius: 0;
+  height: 5em;
+}
+
+.address-copy {
+  background: #291f12;
+  max-width: 3em;
+  min-height: 2em;
+  padding: 0.3em 0.2em 0.2em 0.4em;
+  cursor: pointer;
+}
+
+.address-copy:hover {
+  background: black;
+}
+
+.btc-convert {
+  margin: 0 0 2em 0;
+}
+
+.btc-convert p {
+  display: inline;
+}
+
+.btc-convert span {
+  color: green;
+  margin-left: 5px;
+}
+
+.authmain-2 {
+  /* background: green; */
+  padding-left: 4rem;
+}
+
+/* withdraw */
+.box-two .img img {
+  max-width: 50%;
+  height: auto;
+  padding: 4em 0em;
+  margin: 0em;
+}
+
+/* Inorder */
+.section-two {
+  width: 100%;
+}
+
+/* __________Admin__________ */
+.width {
+  width: 100%;
+}
+
+/* __________Title__________ */
+.section-one {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+/* ____________________ */
+
+.card img {
+  width: 100% !important;
+}
+
+/* _______TABLE BTN_____________ */
+
+.status {
+  width: 8.5rem;
+}
+
+.rejected {
+  background-color: red;
+  color: white;
+}
+
+.pending {
+  background-color: #efa32b;
+  color: white;
+}
+
+.completed {
+  background-color: green;
+  color: white;
+}
+
+.processing {
+  background-color: blue;
+  color: white;
+}
+
+.err-msg {
+  color: red;
+}
+
+.succ-msg {
+  color: green;
+}
+
+.btn-danger {
+  background-color: red;
+  color: white;
+}
+
+/* ________________ */
+.btn-default {
+  background-color: #efa32b;
+  color: white;
+}
+
+.btn-success {
+  background-color: green;
+  color: white;
+}
+.disabled {
+  border: 1px solid #666666 !important;
+  background-color: #cccccc;
+  color: #666666;
+}
+button:disabled,
+.button:disabled,
+.disabled,
+button[disabled] {
+  border: 1px solid #999999;
+  background-color: #cccccc !important;
+  color: #666666;
+  opacity: 0.5;
+}
+
+/* button */
+.button:disabled {
+  opacity: 0.5;
+}
+
+.button {
+  cursor: pointer;
+}
+
+.pl {
+  padding-left: 20px;
+}

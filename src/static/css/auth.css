@@ -1,0 +1,114 @@
+/* auth  */
+.authmain {
+  align-items: center;
+}
+
+.authmain > form {
+  border: 2px solid #fff;
+  color: #fff;
+  border-radius: 10px;
+  margin-top: 2rem;
+  width: 750px;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  margin: auto auto;
+}
+
+.header .mobile {
+  display: none;
+}
+
+.header {
+  margin: 2rem 0;
+}
+.main-form {
+  margin: 1.5rem 0;
+  display: flex;
+  align-self: flex-flex-start;
+  flex-flow: column wrap;
+  align-items: center;
+  width: 100%;
+  max-height: 400px;
+}
+.field {
+  display: inherit;
+  flex-flow: column;
+  margin: 0 20px;
+}
+.field input {
+  width: 300px;
+  height: 60px;
+  background-color: var(--form-color);
+  border: 2px solid #fff;
+  border-radius: 100px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding: 30px;
+  margin: 1rem 0;
+  outline: none;
+  text-transform: capitalize;
+  color: #fff;
+}
+
+.field input:focus,
+.field input:hover {
+  border: 2px solid var(--btn-color);
+}
+.authmain > form button {
+  color: #fff;
+  border: none;
+  padding: 10px 40px;
+  border-radius: 30px;
+  margin: 1.5rem;
+  text-align: center;
+  background-color: var(--btn-color);
+}
+
+.question span {
+  padding: 0.5rem;
+}
+
+@media screen and (max-width: 1100px) {
+  .authmain > form {
+    width: 600px;
+  }
+  .field input {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .header > h3 {
+    display: none;
+  }
+  .header .mobile {
+    display: block;
+    text-align: center;
+  }
+  .header .mobile object {
+    width: 120px;
+    margin-bottom: 10px;
+  }
+  .authmain > form {
+    border: none;
+    width: 100%;
+    height: auto;
+  }
+
+  .main-form {
+    flex-flow: column nowrap;
+    max-height: initial;
+    height: auto;
+  }
+  .field,
+  .field input {
+    width: 100%;
+  }
+  .authmain form > button {
+    padding: 15px 100px;
+  }
+}

@@ -1,0 +1,240 @@
+/* dashboard */
+main {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    linear-gradient(
+      178.18deg,
+      rgba(210, 157, 87, 0) -13.56%,
+      #1b1602 5.63%,
+      #1b1102 149.69%
+    );
+}
+section {
+  color: #fff;
+}
+.my-info,
+.others {
+  display: flex;
+  margin: 15px 0;
+  padding: 15px 0;
+}
+.my-info div {
+  font-weight: bold;
+}
+.my-info div:last-child,
+.others object {
+  margin-left: auto;
+}
+.my-info img {
+  margin-left: 25px;
+}
+.my-info strong {
+  margin: 5px;
+}
+
+.boards {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  justify-content: space-between;
+}
+.overview,
+.wallet {
+  width: 48.5%;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  display: flex;
+}
+.overview {
+  padding: 15px 50px;
+}
+.overview h2 {
+  align-self: center;
+}
+
+.overview #design {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  margin-left: auto;
+  padding: 5px 20px;
+}
+#design h4 {
+  width: 100%;
+}
+.wallet {
+  width: 100%;
+  min-height: 320px;
+  margin: 4rem 0;
+  flex-flow: row wrap;
+  position: relative;
+  overflow: hidden;
+  padding: 30px 50px;
+  justify-content: center;
+}
+.wallet h3 {
+  width: 100%;
+}
+.wallet button {
+  align-self: center;
+  transform: translateY(-50px);
+  margin: 0 50px;
+  width: 35%;
+  padding: 20px;
+  border: none;
+  border-radius: 100px;
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--btn-color);
+}
+.wallet object:first-child {
+  position: absolute;
+  top: 0;
+}
+.wallet object:last-child {
+  position: absolute;
+  bottom: 0;
+}
+
+.table-sec {
+  border: 2px solid #fff;
+  border-radius: 10px;
+  padding: 3.5rem 2rem;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 3rem 0;
+}
+.table td,
+.table th {
+  text-align: center;
+  padding: 20px 0;
+}
+td .fa {
+  font-size: 1.5rem;
+  padding: 0 2rem;
+}
+.table tr {
+  position: relative;
+}
+
+.table tr::before {
+  content: '';
+  width: 100%;
+  height: 85%;
+  bottom: 2px;
+  border: 2px solid #fff;
+  border-radius: 50px;
+  position: absolute;
+  z-index: 2;
+}
+.table .start::before {
+  content: '';
+  border: none;
+}
+.status span {
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+.success {
+  background-color: #00b533;
+}
+
+.danger {
+  background-color: #f85d5d;
+  color: #fff;
+}
+
+.warning {
+  background-color: var(--btn-color);
+}
+.seemore {
+  text-align: center;
+  padding: 15px;
+}
+.seemore a {
+  padding: 12px 25px;
+  background-color: var(--btn-color);
+  border-radius: 30px;
+}
+
+@media screen and (max-width: 1100px) {
+  .overview {
+    width: 100%;
+    padding: 15px 0px 15px 50px;
+  }
+  #design {
+    width: 200px;
+    padding: 0px;
+  }
+  .overview {
+    margin-bottom: 3.5rem;
+  }
+
+  .wallet {
+    border: none;
+    padding: 0;
+    min-height: auto;
+    margin: 0;
+    margin-bottom: 3rem;
+  }
+  .wallet h3,
+  .wallet object {
+    display: none;
+  }
+  .wallet button {
+    width: 200px;
+    margin: 15px;
+    align-self: flex-start;
+    transform: translateY(0px);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .my-info {
+    display: none;
+  }
+  .overview {
+    padding: 10px;
+  }
+  .table-sec {
+    display: none;
+  }
+}
+@media screen and (max-width: 350px) {
+  .overview {
+    padding: 10px;
+    flex-flow: column wrap;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .table-sec {
+    display: block;
+    overflow-x: scroll;
+  }
+  .table-border {
+    border: none;
+  }
+  main table {
+    width: 500px !important;
+  }
+
+  .table-sec .seemore {
+    text-align: left;
+  }
+}
+@media screen and (min-width: 700px) {
+  main table {
+    width: 100% !important;
+  }
+}
+
+@media screen and (min-width: 1442px) {
+  .table-sec,
+  .section-one {
+    width: max(1000px);
+    align-self: center;
+  }
+}

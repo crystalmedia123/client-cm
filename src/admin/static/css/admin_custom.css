@@ -1,0 +1,99 @@
+/* Card */
+.card img {
+  width: 11em;
+}
+
+.grid input {
+  width: 86%;
+  font-size: 0.7em;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* CARD BODY */
+.one-card {
+  position: relative;
+}
+
+/* CARD CHILD */
+.card .update-card {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+/* DELETE */
+.card .delete-card {
+  width: 30px;
+  height: 30px;
+  display: inline;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 0.5em;
+  left: 1em;
+  z-index: 1;
+  font-size: large;
+  font-weight: bold;
+  color: rgb(221, 87, 87);
+  background: #121007;
+  border-radius: 20px;
+}
+.card .delete-card p {
+  margin: 0.1em 0 0.2em 0.5em;
+}
+
+.card .width {
+  background: pink;
+  /* width: 100%; */
+}
+
+/* TABLE */
+.boder-black {
+  border-color: #141001 !important;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  padding: -0.5rem 0rem !important;
+  overflow: auto !important;
+}
+
+.boder-black-trans {
+  border: none !important;
+  border: 2px solid #fff;
+  padding: -0.5rem 0rem !important;
+  overflow: auto !important;
+}
+
+.table2 tr::before {
+  content: none !important;
+}
+
+.table2 .start {
+  border: 2px solid #fff;
+  padding: 10px !important;
+  border-radius: 50px !important;
+}
+
+.table2 .row > td {
+  border: 2px solid !important;
+  border-bottom-color: #efa331 !important;
+  border-left-color: #4b421c !important;
+  border-right-color: #4b421c !important;
+  padding: 10px !important;
+  border-radius: 50px !important;
+}
+
+#mouse-pointer,
+.table2 .mouse-pointer {
+  cursor: pointer !important;
+}
+.table2 .mouse-wait {
+  cursor: wait !important;
+}
+
+.table2 .mouse-not-allowed {
+  cursor: not-allowed !important;
+}

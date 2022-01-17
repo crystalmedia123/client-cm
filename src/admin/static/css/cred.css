@@ -1,0 +1,172 @@
+section{
+    color: #fff;
+}
+.my-info,.others{
+    display: flex;
+    margin: 15px 0;
+    padding: 15px 0;
+}
+.my-info div{
+    font-weight: bold;
+}
+.my-info div:last-child,.others object{
+    margin-left: auto;
+}
+.my-info img{
+    margin-left: 25px;
+}
+.my-info strong{
+    margin: 5px;
+}
+@media screen and (max-width:600px) {
+    .my-info{
+        display: none;
+    }
+
+}
+.note{
+    color: red;
+}
+.section-two{
+    border: 2px solid #fff;
+    border-radius: 15px;
+    padding: 1.5rem 1rem;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(178.18deg, rgba(210, 157, 87, 0) -13.56%, #1B1602 5.63%, #1B1102 149.69%);
+    position: relative;
+}
+
+.section-two .row{
+    display: flex;
+    flex-direction: column;
+}
+
+.section-two .img{
+    width: 100%;
+    margin: 20px 0;
+}
+.section-two .img object{
+    width: 100%;
+    height: auto;
+}
+
+.section-two .form-group input{
+    width: 100%;
+    height: 40px;
+    background-color: var(--form-color);
+    border: 2px solid #fff;
+    border-radius: 100px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding:15px 30px;
+    margin: 1rem 0;
+    outline: none;
+    text-transform: capitalize;
+    color: #fff;
+}
+
+.section-two  button{
+    color: #fff;
+    border: none;
+    padding:11px  30px;
+    border-radius: 30px;
+    margin: 1.5rem;
+    text-align: center;
+    background-color: var(--btn-color);
+}
+
+.img-upload{
+    display: flex;
+    flex-direction: column;
+    border-radius: 50%;
+    align-items: center;
+    margin: 20px 0;
+}
+.img-ico{
+    width: 100px;
+    height: 100px;
+    background-color: #c9c4c4;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+.img-ico img{
+    width: 50%;
+}
+.file-u{
+    text-align: center;
+    position: relative;
+    margin: 20px 0;
+}
+.file-u input{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+@media screen and (min-width:700px) {
+    .section-two{
+        padding: 2rem 1rem ;
+    }
+    .section-two .form-group input{
+        width: 200px;
+        height: 50px;
+    }
+    
+    .section-two .row form{
+        display: flex;
+        padding: 1rem 2rem;
+        flex-flow: row nowrap;
+    }
+    .img-upload{
+        order: 1;
+        padding-left:3rem;
+    }
+    .form-group{
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+
+@media screen and (min-width:1200px) {
+    .section-two{
+        padding: 4rem;
+    }
+    .section-two .row{
+        padding: 2rem 2.5rem;
+    }
+    .img-upload{
+        
+        margin-left:4.5rem;
+    }
+
+    .form-group{
+        margin-bottom: 14px;
+    }
+
+    .section-two .form-group input{
+        width: 450px;
+        height: 60px;
+    }
+    .section-two .form-group #ssn{
+        width: 200px;
+        height: 60px;
+    }
+    .section-two button{
+        padding: 15px 30px;
+    }
+    
+}
+
+@media screen and (min-width:1442px) {
+    .section-two,.section-one{
+        width: max(1000px);
+        align-self: center;
+    }
+
+
+}

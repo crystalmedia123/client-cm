@@ -1,0 +1,26 @@
+@media screen and (max-width:700px) {
+    .table-sec{
+        display: block;
+        overflow-x: scroll;
+    }
+    main table{
+        width: 500px !important;
+    }
+    
+    .table-sec .seemore{
+        text-align: left;
+    }
+}
+@media screen and (min-width:700px) {
+    main table{
+        width: 100% !important;
+    }
+    
+}
+
+@media screen and (min-width:1442px) {
+    .table-sec,.section-one{
+        width: max(1000px);
+        align-self: center;
+    }
+}

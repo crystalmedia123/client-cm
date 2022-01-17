@@ -1,0 +1,268 @@
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 2; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content-trans {
+  background-image: url('../../../static/images/popup.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-color: #252323; */
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 60%; /* Could be more or less, depending on screen size */
+}
+
+/* BODY */
+.modal-content-trans .modal-box {
+  display: flex;
+  flex-direction: column;
+  gap: 6em;
+  align-items: center;
+}
+
+/* IMAGE FRAME */
+.modal-content-trans .img-upload {
+  display: flex;
+  flex-direction: row;
+  order: 1;
+  /* background: #291f12; */
+  /* border-radius: 100%; */
+  /* width: 150px; */
+  /* height: 150px; */
+  position: relative;
+  margin: 4em 0 0 0;
+}
+
+/* MOCK IMG FRAME */
+.modal-content-trans .img-upload .frame-u {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  background: #291f12;
+  border-radius: 100%;
+  margin: 2em 0 10em 0;
+  width: 16em;
+  height: 16em;
+  align-items: center;
+}
+
+.modal-content-trans .color {
+  background: #17120b !important;
+}
+.modal-content-trans .text-frame {
+  background: #161102;
+  width: 10em;
+  height: 3em;
+  text-align: center;
+  padding-top: 9px;
+  color: #fff;
+  font-weight: bolder;
+  margin: 0.5em auto 0.3em auto;
+}
+/* checkbox */
+
+.modal-content-trans .checkbox {
+  background: #291f12;
+  width: 3em;
+  height: 3em;
+  margin: 2em 0 -12px 0;
+}
+
+.modal-content-trans .hide {
+  display: none;
+}
+
+.modal-content-trans .checkbox input[type='checkbox'] {
+  margin: 0.9em 0.9em;
+}
+
+.modal-content-trans .checkbox-name {
+  /* background: pink; */
+  display: inline;
+  width: 200px;
+  margin: 2em 0 0 0;
+  color: red;
+}
+
+/* SELECT FORM */
+.modal-content-trans .select-form {
+  display: flex;
+  width: 40em;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  margin: 0em 0 5em 0;
+}
+
+.modal-content-trans select {
+  background: #291f12;
+  color: #fff;
+  padding: 20px;
+  border: 1px solid #fff;
+  border-radius: 25px;
+}
+
+.modal-content-trans .box2 {
+  margin: 3em 10em 0 0;
+}
+
+@media screen and (max-width: 1026px) {
+  .modal-content-trans .select-form {
+    display: flex;
+    flex-direction: column;
+    width: 30em;
+    align-items: flex-start;
+  }
+  .modal-content-trans .box2 {
+    margin: 0em 5em 4em 0;
+  }
+}
+
+@media screen and (max-width: 710px) {
+  .modal-content-trans .select-form {
+    width: 25em;
+    align-items: flex-start;
+  }
+  .modal-content-trans .box2 {
+    margin: 0em 5em 4em 1em;
+  }
+}
+
+@media screen and (max-width: 545px) {
+  .modal-content-trans .select-form {
+    width: 15em;
+    align-items: end;
+  }
+  .modal-content-trans .box1 {
+    margin: 0em 5em 4em 2em;
+  }
+  .modal-content-trans .box2 {
+    margin: 0em 5em 4em 2em;
+  }
+}
+/* SELECT END */
+
+.modal-content-trans .text-frame:last-child {
+  color: greenyellow;
+}
+
+.modal-content-trans .img-upload .frame-v {
+  background: #291f12;
+  margin: 0.5em 0 0 0;
+  width: 16em;
+  height: 16em;
+}
+
+/* IMG */
+.modal-content-trans .img-upload .frame-u img {
+  width: 100%;
+  border-radius: 10em;
+}
+
+.modal-content-trans .img-upload .frame-v img {
+  width: 100%;
+}
+
+/* FORM BODY */
+.modal-content-trans .cred-form {
+  order: 2;
+  /* background: rgb(4, 35, 47); */
+}
+
+.modal-content-trans .cred-form > .form-group {
+  margin: 2em 0;
+}
+
+.modal-content-trans .cred-form .form-group > label {
+  display: block;
+  margin: 1em 0;
+  color: #fff;
+}
+
+.modal-content-trans .cred-form .form-group > input {
+  padding: 2em 1em;
+  width: 25em;
+  box-sizing: border-box;
+  border-radius: 35px;
+  border: 1px solid #fff;
+  background-color: #291f12;
+  z-index: 1;
+  color: #fff;
+}
+
+.modal-content-trans button {
+  padding: 0.8em 1em;
+  width: 30%;
+  background: #efa32b;
+  border-radius: 30px;
+  border: 1px solid #fff;
+  color: white;
+  margin: 1em 0 4em 0;
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 100px) {
+  .modal-content-trans .cred-form .form-group > input {
+    width: 10em;
+  }
+
+  .modal-content-trans button {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 450px) {
+  .modal-content-trans .cred-form .form-group > input {
+    width: 15em;
+  }
+}
+
+@media screen and (min-width: 550px) {
+  .modal-content-trans .cred-form .form-group > input {
+    width: 20em;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .modal-content-trans .cred-form .form-group > input {
+    width: 25em;
+  }
+
+  .modal-content-trans button {
+    width: 25%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .modal-content-trans .cred-form .form-group > input {
+    width: 35em;
+  }
+}

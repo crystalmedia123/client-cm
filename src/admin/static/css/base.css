@@ -1,0 +1,38 @@
+:root{
+    --btn-color:#EFA32B;
+    --background-color:#121007;
+    --form-input:#291F12;
+    --green-button: #19730B;
+    --delete-button:#DE310B;
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url('../fonts/Poppins-Bold.ttf');
+    font-weight: bold;
+}
+@font-face {
+    font-family: Poppins;
+    src: url('../fonts/Poppins-Regular.ttf');
+    font-weight: normal;
+}
+@font-face {
+    font-family: Poppins;
+    src: url('../fonts/Poppins-Medium.ttf');
+    font-weight: 500;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.footer{
+    color: #fff;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    margin-top: 1rem;
+}
